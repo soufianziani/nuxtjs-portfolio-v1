@@ -1,6 +1,6 @@
 <template>
-  <Navbar class="mt-5" />
-  <div class="min-h-screen mx-auto flex flex-col   justify-center items-center">
+  <div class="min-h-screen  flex flex-col px-2 sm:justify-center">
+    <Navbar class="" />
     <slot />
   </div>
   <Footer />

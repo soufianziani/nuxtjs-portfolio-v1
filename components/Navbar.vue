@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <div class="flex  w-9/12  mx-auto flex-row md:items-center justify-between">
+  <div class="flex   py-5 sm:px-5 sm:w-9/12 px-5 mb-36 mt-9 sm:mt-0 sm:mb-4 sm:mx-auto w-full flex-row md:items-center justify-between">
     <div class="flex justify-between items-center">
       <div>
         <nuxt-link to="/">

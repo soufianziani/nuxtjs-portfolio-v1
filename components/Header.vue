@@ -1,14 +1,12 @@
 <template>
   <div class="flex flex-col max-w-[516px] text-center gap-y-5 items-center">
-    <div class="hover:scale-100 relative scale-90 hover:drop-shadow-2xl cursor-pointer duration-200 group ">
-      <img src="/assets/images/Soufiane-profile.png"  class="  h-40 " alt="">
-      <div  class="absolute sm:top-40 sm:bottom-0 bottom-64 z-10  sm:left-60 w-full rounded-full hidden group-hover:block sm:rounded-ss-none group-hover:duration-200 bg-white p-3 text  text-dark border  transition-opacity duration-300      ">
-      <p>Whatsapp <br> Me : +212 631 563-092</p>
-</div>
+    <div class="  hover:scale-100 relative scale-90 hover:drop-shadow-md cursor-pointer duration-200 group ">
+      <img src="/assets/images/Soufiane-profile.png"  class=" w-40 h-40 " alt="">
+      <div class="absolute px-1  py-1 bottom-0 text-sm hidden group-hover:block bg-white rounded-full w-full border rounded-ss-none text-center left-32 sm:left-36"> Whatssap Me <br>  0631-563-092</div>
     </div>
     <p class="text text-center">Hi! I’m Soufiane ZIANI ✌🏻</p>
     <p class="text-center  mt-2.5  text-3xl">Junior Full Stack Developer and Graphic Designer</p>
-    <p class="text-center mt-2.5 text-sm max-w-[450px] text-secondary">
+    <p class="text-center mt-2.5 text-sm max-w-[400px] text-secondary">
       As a Junior Full Stack Developer and Web Designer, I specialize in <a href="https://laravel.com" class="underline"
         target="_blank" rel="noopener noreferrer">Laravel</a> and <a href="https://vuejs.org" class="underline"
         target="_blank" rel="noopener noreferrer">Vue.js</a>, crafting seamless digital experiences. With expertise in
