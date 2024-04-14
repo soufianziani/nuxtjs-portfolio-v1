@@ -1,5 +1,5 @@
 <template>
-  <div class=" my-32 ">
+  <div >
   <Header/>
   
   </div>
