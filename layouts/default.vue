@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen  flex flex-col  sm:justify-center">
-    <Navbar class="" />
+    <Navbar  />
     <slot />
   </div>
   <Footer />

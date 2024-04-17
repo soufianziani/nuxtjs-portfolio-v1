@@ -1,46 +1,42 @@
 <template>
-  <div class="flex py-5 sm:px-0 sm:w-9/12 px-5 mb-36 mt-9 sm:mt-0 sm:mb-4 sm:mx-auto w-full flex-row md:items-center justify-between">
-    <div class="flex justify-between items-center">
-      <div>
-        <nuxt-link to="/">
-          <p class="text-black text-[18px]">Soufiane.</p>
-        </nuxt-link>
+  <div class="sm:mx-auto   sm:w-9/12 w-full   ">
+    <div class="  text-black md:bg-none bg-gray-200 bg-opacity-5 backdrop-blur-lg    p-4 flex justify-between items-center  w-full ">
+      <div class="flex items-center ">
+        <!-- Replace with your logo or text -->
+        <span class="">Soufiane.</span>
       </div>
-      <!-- This part is commented out, but I'm leaving it here in case you want to use it later -->
-      <!-- <div>
-        <button type="button" @click="toggleOpenMenu" class="block text-gray-800 hover:text-gray-600 focus:text-gray-600 focus:outline-none md:hidden">
-          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-            <path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
-          </svg>
-        </button>
-      </div> -->
+      <!-- Button to toggle menu on mobile -->
+      <button @click="toggleMenu" class="md:hidden text-sm ">
+        <svg v-if="showMenu" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+        <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <!-- Navigation links for larger screens -->
+      <div class="hidden md:flex gap-11">
+        <nuxt-link to="/" :class="[$route.path === '/' ? 'border-b border-dark' : 'relative after:absolute  after:top-6  after:left-0 after:h-[1px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65, 0.05, 0.36, 1)] hover:after:origin-bottom-left hover:after:scale-x-100']" >About Me</nuxt-link>
+        <nuxt-link to="/projects" :class="[$route.path === '/projects' ? 'border-b border-dark' : 'relative after:absolute  after:top-6  after:left-0 after:h-[1px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65, 0.05, 0.36, 1)] hover:after:origin-bottom-left hover:after:scale-x-100']" >Projects</nuxt-link>
+      </div>
     </div>
-    <!-- This part is commented out, but I'm leaving it here in case you want to use it later -->
-    <!-- <div class="flex flex-col md:flex-row md:-mx-4" :class="isOpen ? 'block' : ['hidden' , 'md:block']">
-      <nuxt-link to="/" class="relative after:absolute after:top-6 after:left-0 after:h-[1px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 md:mx-4 md:my-0" href="#">About Me</nuxt-link>
-      <nuxt-link to="/" class="relative after:absolute after:top-6 after:left-0 after:h-[1px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 md:mx-4 md:my-0" href="#">Projects</nuxt-link>
-    </div> -->
-    <div class="flex gap-4">
-      <nuxt-link
-  to="/"
-  :class="[$route.path === '/' ? 'border-b border-dark' : 'relative after:absolute  after:top-6 after:left-0 after:h-[1px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65, 0.05, 0.36, 1)] hover:after:origin-bottom-left hover:after:scale-x-100']"
->
-  About Me
-</nuxt-link>
-      <nuxt-link
-  to="/"
-  :class="[$route.path === '/projetcs' ? 'border-b border-dark' : 'relative after:absolute  after:top-6 after:left-0 after:h-[1px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65, 0.05, 0.36, 1)] hover:after:origin-bottom-left hover:after:scale-x-100']"
->
-  Projetcs
-</nuxt-link>
+    <!-- Dropdown menu for mobile -->
+ <div class="  relative ">
+     <div v-if="showMenu" class="md:hidden text-center  bg-gray-200 bg-opacity-5 backdrop-blur-lg border-b shadow-b-md   py-2  rounded-b-lg flex flex-col justify-center items-center  absolute w-full z-20 ">
+      <nuxt-link to="/" class="block  text-sm py-4 px-4">About Me</nuxt-link>
+      <nuxt-link to="/projects" class="block  text-sm pb-10  pt-4  px-4">Projects</nuxt-link>
     </div>
+ </div>
+    <div class="mb-10"></div> <!-- Placeholder for fixed header -->
   </div>
 </template>
 
 <script setup>
-// You can put your script setup here if needed
-</script>
+import { ref } from 'vue';
 
-<style scoped>
-/* You can add your scoped styles here if needed */
-</style>
+const showMenu = ref(false);
+
+const toggleMenu = () => {
+  showMenu.value = !showMenu.value;
+};
+</script>

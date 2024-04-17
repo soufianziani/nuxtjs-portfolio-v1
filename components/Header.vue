@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col max-w-[516px] text-center gap-y-5 items-center">
+  <div class="flex mydiv flex-col max-w-[516px] text-center gap-y-5 items-center">
     <div class="  hover:scale-100 relative scale-90  cursor-pointer duration-500 group ">
       <div class="group-hover:drop-shadow-2xl">
         <img src="/assets/images/Soufiane-profile.png"  class=" w-40 h-40 " alt="">
@@ -18,17 +18,18 @@
       functionality with aesthetics, creating intuitive interfaces that captivate users.
     </p>
     <div class=" relative">
-      <button
-        class="group  mx-5   inline-flex   text-white animate-background-shine items-center justify-center px-10 py-4   rounded-full bg-[linear-gradient(110deg,#0C0C0C,45%,#222222,55%,#0C0C0C)] bg-[length:200%_100%]  font-medium  transition-colors  "><span
-          class="relative inline-flex overflow-hidden">
-          <div
-            class="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[110%] group-hover:skew-y-12">
-            Hire Me</div>
-          <div
-            class="absolute translate-y-[110%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
-            Hire Me</div>
-
-        </span></button>
+      <a href="https://www.linkedin.com/in/ziani-soufiane/" target="_blank">
+        <button
+          class="group  mx-5   inline-flex   text-white animate-background-shine items-center justify-center px-10 py-4   rounded-full bg-[linear-gradient(110deg,#0C0C0C,45%,#222222,55%,#0C0C0C)] bg-[length:200%_100%]  font-medium  transition-colors  "><span
+            class="relative inline-flex overflow-hidden">
+            <div
+              class="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[110%] group-hover:skew-y-12">
+              Hire Me</div>
+            <div
+              class="absolute translate-y-[110%] skew-y-12 transition duration-500 group-hover:translate-y-0 group-hover:skew-y-0">
+              Hire Me</div>
+          </span></button>
+      </a>
       
       
       <a href="/soufiane_resume.pdf" target="_blank" >
