@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: "Averta Demo PE Regular";
   src: url("https://db.onlinewebfonts.com/t/3114dbb517b7c67b80e322545c5f565f.eot");
   src: url("https://db.onlinewebfonts.com/t/3114dbb517b7c67b80e322545c5f565f.eot?#iefix")format("embedded-opentype"),
@@ -13,7 +13,14 @@
 }
 *{
   font-family: "Averta Demo PE Regular";
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+  font-family: "Space Grotesk", sans-serif;
+
+};
 .my-div{
 
   transition: transform 0.5s ease-in-out;
