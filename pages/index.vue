@@ -11,10 +11,10 @@
     <div class="flex justify-center items-center"></div>
     <Experience />
     <div class="w-full ">
-        <div class="flex items-center justify-center my-10">
-      <img src="assets/icons/StarBlack.svg" class="w-10" alt="" />
-    </div>
-      <div class="flex  justify-center items-center">
+        <!-- <div class="flex items-center justify-center my-10">
+      <img src="assets/icons/Logo.svg" class="w-10" alt="" />
+    </div> -->
+      <div class="flex  justify-center  items-center">
         <Services />
       </div>
     </div>

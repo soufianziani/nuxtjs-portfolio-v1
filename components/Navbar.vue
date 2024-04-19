@@ -1,6 +1,6 @@
 <template>
   <div class="sm:mx-auto   sm:w-9/12 w-full   ">
-  <div v-if="showMenu" class="fixed md:hidden backdrop-blur-sm bg-opacity-15 w-full z-10 min-h-screen"></div>
+  <div v-if="showMenu" @click="toggleMenu" class="fixed md:hidden backdrop-blur-sm bg-opacity-5 w-full left-0  z-10 min-h-screen"></div>
     <div class="  text-black md:bg-none bg-gray-200 bg-opacity-5 backdrop-blur-lg    p-4 flex justify-between items-center  w-full ">
       <div class="flex items-center ">
         <img src="/assets/icons/Logo.svg" class="w-6" alt="">
