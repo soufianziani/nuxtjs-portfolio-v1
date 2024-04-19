@@ -3,7 +3,7 @@
     <div
       class="
         animate-background-shine items-center bg-[linear-gradient(110deg,#0C0C0C,30%,#1e2631,40%,#0C0C0C)] bg-[length:200%_100%] px-6 font-medium  transition-colors  text-white
-      flex rounded-2xl sm:px-0 sm:w-9/12 py-10 mb-10 sm:mb-20 mt-9 sm:mt-0  sm:mx-auto w-full flex-col gap-2 md:items-center justify-center "
+      flex rounded-2xl sm:px-0 sm:w-9/12 py-10 mb-10 sm:my-20 mt-9   sm:mx-auto w-full flex-col gap-2 md:items-center justify-center "
     >
       <h1 class="text-center">services</h1>
       <p class="text-3xl text-center">My Awesome Service</p>
