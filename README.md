@@ -22,4 +22,8 @@ Here's an image showcasing your portfolio website's home page:
 
 ![Portfolio Home Page](docs/portfolio-home.png)
 
-Make sure to replace the image path if your image is in a different location.
+Make sure the image path matches the actual location of the image in your project directory.
+
+## Visit My Portfolio
+
+You can visit my portfolio at [https://soufianeziani.netlify.app](https://soufianeziani.netlify.app).
