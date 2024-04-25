@@ -1,75 +1,25 @@
-# Nuxt 3 Minimal Starter
+# Portfolio Website
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Implemented Features
 
-## Setup
+- [x] Responsive design for optimal viewing on different devices.
+- [x] Dynamic portfolio showcasing your projects.
+- [x] Contact form for easy communication.
+- [x] About page introducing yourself and your skills.
+- [x] Blog section to share your thoughts and experiences.
+- [x] Integrated animations and transitions for a smooth user experience.
 
-Make sure to install the dependencies:
+## Technologies Used
 
-```bash
-# npm
-npm install
+- [Nuxt.js](https://nuxt.com/) for the front-end development.
+- [Tailwind CSS](https://tailwindcss.com/) for styling and responsive design.
+- [Vue.js](https://vuejs.org/) for JavaScript framework.
+- npm or yarn as the package manager.
 
-# pnpm
-pnpm install
+## Home Page Image
 
-# yarn
-yarn install
+Here's an image showcasing your portfolio website's home page:
 
-# bun
-bun install
-```
+![Portfolio Home Page](docs/portfolio-home.png)
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Make sure to replace the image path if your image is in a different location.
