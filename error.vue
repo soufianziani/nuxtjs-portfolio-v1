@@ -9,7 +9,7 @@
         Oops, you found our {{ error.statusCode }} page
       </h1>
       <h2 class="text-xl max-w-4xl text-center">
-        This {{ error.url }} is not a fault, just an accident that was not
+        This <span class="font-semibold">{{ error.url }}</span> is not a fault, just an accident that was not
         intentional. However, we doubt that this is the page you're looking for
         and we apologize profusely for it.
       </h2>
