@@ -6,7 +6,6 @@
         <img src="/assets/icons/Logo.svg" class="w-6" alt="">
         <span class="text-xl">Soufiane.</span>
       </div>
-      <!-- Button to toggle menu on mobile -->
       <button @click="toggleMenu" class="md:hidden text-sm ">
        <div class="flex items-center gap-1">
         <p>Menu</p>
